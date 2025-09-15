@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6AEE945-ECB7-47D3-99A5-C0741FE4B303}|..\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.domain.logic\\simpletaskplanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EEB11B1-7AA9-4C43-9452-55771E82A7F1}|Havrilemko.TaskPlanner.csproj|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrilemko.taskplanner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EEB11B1-7AA9-4C43-9452-55771E82A7F1}|Havrilemko.TaskPlanner.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB7CC7F1-7411-45A5-9CED-69EA545DB7DE}|..\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.domain.models\\workitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SimpleTaskPlanner.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
+              "RelativeDocumentMoniker": "..\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
+              "RelativeToolTip": "..\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T22:00:49.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkItem.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\WorkItem.cs",
+              "RelativeDocumentMoniker": "..\\Havrylenko.TaskPlanner.Domain.Models\\WorkItem.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\WorkItem.cs",
+              "RelativeToolTip": "..\\Havrylenko.TaskPlanner.Domain.Models\\WorkItem.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwA4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T22:00:04.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAABgAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T09:19:52.3Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Havrylenko.TaskPlanner.Domain.Logic\Havrylenko.TaskPlanner.Domain.Logic..csproj" />
+    <ProjectReference Include="..\Havrylenko.TaskPlanner.Domain.Models\Havrylenko.TaskPlanner.Domain.Models..csproj" />
+  </ItemGroup>
+
+</Project>
