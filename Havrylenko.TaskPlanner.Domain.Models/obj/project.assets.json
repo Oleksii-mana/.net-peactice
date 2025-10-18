@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Документи\\Візуал\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Документи\\.net-peactice\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj",
       "projectName": "Havrylenko.TaskPlanner.Domain.Models.",
-      "projectPath": "C:\\Users\\ASUS\\OneDrive\\Документи\\Візуал\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj",
+      "projectPath": "C:\\Users\\ASUS\\OneDrive\\Документи\\.net-peactice\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\OneDrive\\Документи\\Візуал\\Havrylenko.TaskPlanner.Domain.Models\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\OneDrive\\Документи\\.net-peactice\\Havrylenko.TaskPlanner.Domain.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

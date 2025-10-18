@@ -1,0 +1,9 @@
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Files built by Visual Studio
+[Bb]in/
+[Oo]bj/

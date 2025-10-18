@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Havrylenko.TaskPlanner.Domain.Logic_;
 using Havrylenko.TaskPlanner.Domain.Models_.Enums;
 
 namespace Havrylenko.TaskPlanner.Domain.Models_
 {
-    public class SimpleTaskPlanner
+    public class SimpleTaskPlanner : ITaskPlanner
     {
    
             public WorkItem[] CreatePlan(WorkItem[] items)

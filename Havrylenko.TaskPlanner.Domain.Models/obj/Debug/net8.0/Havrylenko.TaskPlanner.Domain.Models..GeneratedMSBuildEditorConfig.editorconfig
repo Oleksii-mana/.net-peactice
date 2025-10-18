@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Havrylenko.TaskPlanner.Domain.Models_
-build_property.ProjectDir = C:\Users\ASUS\OneDrive\Документи\Візуал\Havrylenko.TaskPlanner.Domain.Models\
+build_property.ProjectDir = C:\Users\ASUS\OneDrive\Документи\.net-peactice\Havrylenko.TaskPlanner.Domain.Models\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

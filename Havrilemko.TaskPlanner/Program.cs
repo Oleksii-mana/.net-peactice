@@ -1,113 +1,82 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Havrylenko.TaskPlanner.Domain.Models_.Enums;
+﻿
+using Havrylenko.TaskPlanner.Domain.Logic_;
 using Havrylenko.TaskPlanner.Domain.Models_;
+using Havrylenko.TaskPlanner.Domain.Models_.Enums;
+using Havrylenko.TaskPlanner.DataAccess_; // <-- Додали новий using
+using System.Collections.Generic;
+using System;
 using System.Linq;
-Console.OutputEncoding = System.Text.Encoding.UTF8;
-WorkItem[] items =
-        {
-            new WorkItem("Write report", new DateTime(2025, 9, 20), Priority.High),
-            new WorkItem("Fix bugs", new DateTime(2025, 9, 15), Priority.Medium),
-            new WorkItem("Team meeting", new DateTime(2025, 9, 12), Priority.High),
-            new WorkItem("Prepare slides", new DateTime(2025, 9, 18), Priority.Low),
-            new WorkItem("Code review", new DateTime(2025, 9, 11), Priority.Medium),
-            new WorkItem("Client call", new DateTime(2025, 9, 10), Priority.High),
-            new WorkItem("Update docs", new DateTime(2025, 9, 17), Priority.Low),
-            new WorkItem("Deploy app", new DateTime(2025, 9, 13), Priority.High),
-            new WorkItem("Design UI", new DateTime(2025, 9, 16), Priority.Medium),
-            new WorkItem("Backup DB", new DateTime(2025, 9, 14), Priority.Low)
-        };
-SimpleTaskPlanner planner = new SimpleTaskPlanner();
 
-bool running = true;
-while (running)
+internal static class Program
 {
-    // Сортуємо та виводимо
-    var sortedItems = planner.CreatePlan(items.ToArray());
+    // 1. Створюємо "справжні" об'єкти (залежності) тут, один раз
+    private static readonly ITaskPlanner planner = new SimpleTaskPlanner();
+    private static readonly IWorkItemRepository repository = new WorkItemRepository();
 
-    Console.WriteLine("\n--- Поточний список завдань ---");
-    foreach (var item in sortedItems)
+    public static void Main(string[] args)
     {
-        Console.WriteLine($"{item.Priority,-6} {item.DueDate.ToShortDateString(),-12} {item.Title}");
+        // 2. Передаємо ОБИДВІ залежності в головний метод
+        RunApp(planner, repository);
     }
 
-    Console.Write("\nБажаєте додати новий елемент масиву? (y/n): ");
-    string answer = Console.ReadLine()?.Trim().ToLower();
-
-    if (answer == "n")
+    // 3. Метод тепер приймає обидва інтерфейси
+    public static void RunApp(ITaskPlanner taskPlanner, IWorkItemRepository repository)
     {
-        running = false;
-        Console.WriteLine("Програма завершена.");
-    }
-    else if (answer == "y")
-    {
-        // Зчитуємо новий елемент
-        Console.Write("Введіть назву завдання: ");
-        string title = Console.ReadLine();
+        // --- ЗАВАНТАЖЕННЯ ---
+        // Завантажуємо існуючі завдання з файлу
+        List<WorkItem> allItems = repository.LoadWorkItems().ToList();
+        Console.WriteLine($"--- Loaded {allItems.Count} existing tasks from file ---");
 
-        // Рік
-        int year;
-        while (true)
+        // Показуємо, що завантажили (але ще не сортовані)
+        foreach (var item in allItems)
         {
-            Console.Write("Введіть рік: ");
-            if (int.TryParse(Console.ReadLine(), out year) && year > 0) break;
-            Console.WriteLine("Некоректний рік. Спробуйте ще раз.");
+            Console.WriteLine($"(Loaded) {item.ToString()}");
         }
+        Console.WriteLine("---------------------------------------------\n");
 
-        // Місяць
-        int month;
+        // --- ДОДАВАННЯ НОВИХ ---
+        List<WorkItem> newItemsFromUser = new List<WorkItem>();
         while (true)
         {
-            Console.Write("Введіть місяць (1-12): ");
-            if (int.TryParse(Console.ReadLine(), out month) && month >= 1 && month <= 12) break;
-            Console.WriteLine("Некоректний місяць. Спробуйте ще раз.");
-        }
-
-        // День
-        int day;
-        while (true)
-        {
-            Console.Write("Введіть число: ");
-            if (int.TryParse(Console.ReadLine(), out day))
+            Console.WriteLine("Enter NEW task title (or leave empty to finish adding):");
+            string? title = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(title))
             {
-                // перевіряємо чи існує дата
-                try
-                {
-                    var testDate = new DateTime(year, month, day);
-                    break;
-                }
-                catch
-                {
-                    Console.WriteLine("Такої дати не існує. Спробуйте ще раз.");
-                }
+                break;
             }
-            else
+
+            Console.WriteLine("Enter due date (e.g., 20.10.2025):");
+            DateTime dueDate;
+            while (!DateTime.TryParse(Console.ReadLine(), out dueDate))
             {
-                Console.WriteLine("Некоректне число. Спробуйте ще раз.");
+                Console.WriteLine("Invalid date format. Try again (e.g., 20.10.2025):");
             }
+
+            Console.WriteLine("Enter priority (Low, Medium, High, Urgent):");
+            Priority priority;
+            while (!Enum.TryParse<Priority>(Console.ReadLine(), true, out priority))
+            {
+                Console.WriteLine("Invalid priority. Try again (Low, Medium, High, Urgent):");
+            }
+
+            newItemsFromUser.Add(new WorkItem(title, dueDate, priority));
         }
 
-        // Пріоритет
-        Priority priority;
-        while (true)
+        // --- ОБ'ЄДНАННЯ, СОРТУВАННЯ І ЗБЕРЕЖЕННЯ ---
+
+        // Додаємо нові завдання до старого списку
+        allItems.AddRange(newItemsFromUser);
+
+        // 4. Використовуємо ІНТЕРФЕЙС сортувальника
+        var finalPlan = taskPlanner.CreatePlan(allItems.ToArray());
+
+        // 5. Використовуємо ІНТЕРФЕЙС репозиторію для збереження
+        repository.SaveWorkItems(finalPlan);
+
+        Console.WriteLine($"\n--- Your final sorted plan ({finalPlan.Length} items) is now SAVED to file ---");
+        foreach (var item in finalPlan)
         {
-            Console.WriteLine("Оберіть пріоритет:");
-            foreach (var pr in Enum.GetValues(typeof(Priority)))
-            {
-                Console.WriteLine($"- {pr}");
-            }
-            Console.Write("Введіть пріоритет: ");
-            string priorityInput = Console.ReadLine();
-
-            if (Enum.TryParse(priorityInput, true, out priority)) break;
-            Console.WriteLine("Некоректний пріоритет. Спробуйте ще раз.");
+            Console.WriteLine(item.ToString());
         }
-
-        items = items.Append(new WorkItem(title, new DateTime(year, month, day), priority)).ToArray();
-
-        Console.WriteLine("\nНовий елемент додано.\n");
-    }
-    else
-    {
-        Console.WriteLine("Невірна відповідь. Введіть 'y' або 'n'.");
     }
 }

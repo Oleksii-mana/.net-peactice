@@ -1,16 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+    <PackageReference Include="System.Text.Json" Version="9.0.10" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Havrylenko.TaskPlanner.DataAccess_\Havrylenko.TaskPlanner.DataAccess_.csproj" />
     <ProjectReference Include="..\Havrylenko.TaskPlanner.Domain.Logic\Havrylenko.TaskPlanner.Domain.Logic..csproj" />
     <ProjectReference Include="..\Havrylenko.TaskPlanner.Domain.Models\Havrylenko.TaskPlanner.Domain.Models..csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
 </Project>

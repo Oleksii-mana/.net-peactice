@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Документи\\Візуал\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Документи\\.net-peactice\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
       "projectName": "Havrylenko.TaskPlanner.Domain.Logic.",
-      "projectPath": "C:\\Users\\ASUS\\OneDrive\\Документи\\Візуал\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
+      "projectPath": "C:\\Users\\ASUS\\OneDrive\\Документи\\.net-peactice\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\OneDrive\\Документи\\Візуал\\Havrylenko.TaskPlanner.Domain.Logic\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\OneDrive\\Документи\\.net-peactice\\Havrylenko.TaskPlanner.Domain.Logic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ASUS\\OneDrive\\Документи\\Візуал\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj": {
-              "projectPath": "C:\\Users\\ASUS\\OneDrive\\Документи\\Візуал\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj"
+            "C:\\Users\\ASUS\\OneDrive\\Документи\\.net-peactice\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj": {
+              "projectPath": "C:\\Users\\ASUS\\OneDrive\\Документи\\.net-peactice\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj"
             }
           }
         }
