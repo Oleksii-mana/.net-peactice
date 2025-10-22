@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "rpDJW9P4SJVerSTTKov0wtKOgp9tP84y5sCVnwAMxC+9MTir10udTqV8IG6IHD7cu0Qf6HSubuFDaIKf72+LlA==",
+  "dgSpecHash": "9xV16ZW0u5/4sczbPzIJ76CIHtTnEecTQXvdUeinI4veMoezSy9jENZ+MimyMCP10V+kYr8/Q1ZCf3jYyxLamg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\OneDrive\\Документи\\.net-peactice\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.io.pipelines\\9.0.10\\system.io.pipelines.9.0.10.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.text.encodings.web\\9.0.10\\system.text.encodings.web.9.0.10.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.text.json\\9.0.10\\system.text.json.9.0.10.nupkg.sha512"
+  ],
   "logs": []
 }

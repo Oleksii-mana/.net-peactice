@@ -1,65 +1,65 @@
-
+using Havrylenko.TaskPlanner.Domain.Logic_; // Перевірте namespace
+using Havrylenko.TaskPlanner.Domain.Models_; // Перевірте namespace
 using Havrylenko.TaskPlanner.Domain.Models_.Enums;
-using Havrylenko.TaskPlanner.Domain.Models_;
-using Havrylenko.TaskPlanner.Domain.Logic_;
-//using Havrylenko.TaskPlanner.Domain.Logic_;
+using Havrylenko.TaskPlanner.DataAccess_; // <-- Новий using
 
 namespace Havrilemko.TaskPlanner.Testing
 {
     [TestClass]
     public class SimpleTaskPlannerTests
     {
+        // --- Наш "Фальшивий" Репозиторій для Тестування ---
+        // Він реалізує інтерфейс, але лише ті методи, які нам потрібні.
+        private class FakeWorkItemRepository : IWorkItemRepository
+        {
+            private readonly WorkItem[] _items;
+
+            // Ми передаємо йому наш тестовий масив при створенні
+            public FakeWorkItemRepository(WorkItem[] items)
+            {
+                _items = items;
+            }
+
+            // 1. Реалізуємо метод, який буде викликати наш SimpleTaskPlanner
+            public WorkItem[] GetAll()
+            {
+                return _items;
+            }
+
+            // 2. Решту методів залишаємо "пустими", вони не потрібні для цього тесту
+            public Guid Add(WorkItem workItem) => throw new NotImplementedException();
+            public WorkItem? Get(Guid id) => throw new NotImplementedException();
+            public bool Remove(Guid id) => throw new NotImplementedException();
+            public bool Update(WorkItem workItem) => throw new NotImplementedException();
+            public void SaveChanges() => throw new NotImplementedException();
+        }
+        // ---------------------------------------------------
+
+
         [TestMethod]
         public void CreatePlan_ShouldSortItems_ByPriority_ThenByDueDate_ThenByTitle()
         {
             // ARRANGE (Підготовка)
-            // Створюємо хаотичний набір завдань, який перевірить всі 3 правила сортування.
+            // 1. Створюємо хаотичний набір завдань
             var items = new WorkItem[]
             {
-                // #1: Має бути третім (Medium, але пізніша дата)
-                new WorkItem
-                {
-                    Title = "Task C (Medium, Late)",
-                    Priority = Priority.Medium,
-                    DueDate = DateTime.Now.AddDays(2)
-                },
-                
-                // #2: Має бути першим (High)
-                new WorkItem
-                {
-                    Title = "Task A (High)",
-                    Priority = Priority.High,
-                    DueDate = DateTime.Now.AddDays(1)
-                },
-
-                // #3: Має бути четвертим (Low)
-                new WorkItem
-                {
-                    Title = "Task D (Low)",
-                    Priority = Priority.Low,
-                    DueDate = DateTime.Now.AddDays(1)
-                },
-
-                // #4: Має бути другим (Medium, але рання дата)
-                new WorkItem
-                {
-                    Title = "Task B (Medium, Early)",
-                    Priority = Priority.Medium,
-                    DueDate = DateTime.Now.AddDays(1)
-                }
+                new WorkItem { Title = "Task C (Medium, Late)", Priority = Priority.Medium, DueDate = DateTime.Now.AddDays(2) },
+                new WorkItem { Title = "Task A (High)", Priority = Priority.High, DueDate = DateTime.Now.AddDays(1) },
+                new WorkItem { Title = "Task D (Low)", Priority = Priority.Low, DueDate = DateTime.Now.AddDays(1) },
+                new WorkItem { Title = "Task B (Medium, Early)", Priority = Priority.Medium, DueDate = DateTime.Now.AddDays(1) }
             };
 
-            //var planner = new SimpleTaskPlanner();
+            // 2. Створюємо фальшивий репозиторій
+            IWorkItemRepository fakeRepo = new FakeWorkItemRepository(items);
 
-            //// ACT (Дія)
-            //// Викликаємо метод, який тестуємо
-            //var actualSortedItems = planner.CreatePlan(items);
-            // Тепер ми тестуємо будь-яку реалізацію ITaskPlanner
-            ITaskPlanner planner = new SimpleTaskPlanner();
-            var actualSortedItems = planner.CreatePlan(items);
+            // 3. Передаємо фальшивий репозиторій у конструктор
+            ITaskPlanner planner = new SimpleTaskPlanner(fakeRepo);
+
+            // ACT (Дія)
+            // Викликаємо метод БЕЗ параметрів
+            var actualSortedItems = planner.CreatePlan();
 
             // ASSERT (Перевірка)
-            // Створюємо масив у тому порядку, в якому ми ОЧІКУЄМО отримати результат
             var expectedSortedItems = new WorkItem[]
             {
                 items[1], // Task A (High)
@@ -68,7 +68,6 @@ namespace Havrilemko.TaskPlanner.Testing
                 items[2]  // Task D (Low)
             };
 
-            // Порівнюємо очікуваний масив з фактичним
             CollectionAssert.AreEqual(expectedSortedItems, actualSortedItems);
         }
     }

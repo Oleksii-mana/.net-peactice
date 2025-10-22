@@ -4,6 +4,6 @@ namespace Havrylenko.TaskPlanner.Domain.Logic_
 {
     public interface ITaskPlanner
     {
-        WorkItem[] CreatePlan(WorkItem[] items);
+        WorkItem[] CreatePlan();
     }
 }

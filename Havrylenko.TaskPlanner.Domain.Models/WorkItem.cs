@@ -10,26 +10,27 @@ namespace Havrylenko.TaskPlanner.Domain.Models_
     public class WorkItem
     {
         private DateTime CreationDate;
-        //public DateTime DueDate;
-        //public Priority Priority;
-        //public Complexity Complexity;
-        //public string Title;
         public DateTime DueDate { get; set; }
         public Priority Priority { get; set; }
         public Complexity Complexity { get; set; }
+
+        public Guid Id { get; set; }
         public string Title { get; set; }
         private string Description;
-        private bool IsCompleted;
+        public bool IsCompleted { get; set; }
 
         public WorkItem(string title, DateTime dueDate, Priority priority) {
+            Id = Guid.NewGuid();
             Title = title;
             DueDate = dueDate;
             Priority = priority;
-            //Complexity = complexity;
         }
 
         public WorkItem()
         {
+            Id = Guid.NewGuid();
+            Title = string.Empty;
+            Description = string.Empty;
         }
         public override bool Equals(object? obj)
         {
@@ -37,15 +38,17 @@ namespace Havrylenko.TaskPlanner.Domain.Models_
             {
                 return false;
             }
+            return this.Id == other.Id;
+        }
 
-            return this.Title == other.Title
-                && this.Priority == other.Priority
-                && this.DueDate == other.DueDate;
+        public WorkItem Clone()
+        {
+            return (WorkItem)this.MemberwiseClone();
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(Title, Priority, DueDate);
+            return this.Id.GetHashCode();
         }
         public override string ToString()
         {

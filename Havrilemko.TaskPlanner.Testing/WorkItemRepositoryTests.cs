@@ -1,68 +1,76 @@
 ﻿using Havrylenko.TaskPlanner.DataAccess_;
 using Havrylenko.TaskPlanner.Domain.Models_;
 using Havrylenko.TaskPlanner.Domain.Models_.Enums;
-using System.IO; // Потрібен для File
+using System.IO;
+using System.Linq;
 
 namespace Havrilemko.TaskPlanner.Testing
 {
     [TestClass]
     public class WorkItemRepositoryTests
     {
-        // Шлях до СПРАВЖНЬОГО файлу, який використовує репозиторій
-        private const string _realFilePath = "workitems.json";
+        private const string _filePath = "work-items.json";
 
-        // Цей метод [TestInitialize] запускається ПЕРЕД кожним тестом
         [TestInitialize]
         public void Setup()
         {
-            // Видаляємо СПРАВЖНІЙ файл, щоб тест завжди починався з чистого аркуша
-            if (File.Exists(_realFilePath))
+            // Завжди видаляємо файл перед тестом, щоб почати "з чистого аркуша"
+            if (File.Exists(_filePath))
             {
-                File.Delete(_realFilePath);
+                File.Delete(_filePath);
             }
         }
 
         [TestMethod]
-        public void SaveWorkItems_And_LoadWorkItems_ShouldReturnSameItems()
+        public void Add_Get_Update_Remove_And_SaveChanges_ShouldWork()
         {
-            // ARRANGE
-            // (Обманюємо конструктор репозиторію, щоб він писав у наш тестовий файл)
-            // Це не ідеально, але для цієї роботи підійде.
-            // Кращим рішенням було б передавати шлях через конструктор.
+            // --- ARRANGE (Test 1: Add, Get, GetAll) ---
+            // Створюємо repo1. У цей момент він завантажує 0 елементів.
+            IWorkItemRepository repo1 = new FileWorkItemsRepository();
+            var item1 = new WorkItem("Task 1 (High)", DateTime.Now, Priority.High);
+            var item2 = new WorkItem("Task 2 (Low)", DateTime.Now, Priority.Low);
 
-            // ВАЖЛИВО: Оскільки ми не можемо змінити шлях у коді репозиторію,
-            // нам треба вручну створити файл "workitems.json" у папці тесту.
+            // --- ACT 1 ---
+            var newId1 = repo1.Add(item1);
+            var newId2 = repo1.Add(item2);
 
-            // Давайте спростимо. Ми просто перевіримо, що репозиторій за замовчуванням
-            // повертає порожній масив, якщо файлу немає.
+            // --- ASSERT 1 (Перевіряємо "пам'ять") ---
+            Assert.AreEqual(2, repo1.GetAll().Length);
+            Assert.AreEqual("Task 1 (High)", repo1.Get(newId1)?.Title);
 
-            // ARRANGE
-            IWorkItemRepository repository = new WorkItemRepository();
+            // --- ARRANGE 2 (Update) ---
+            // Модифікуємо об'єкт (симулюємо зміну назви)
+            item1.Title = "Updated Task 1";
 
-            // ACT
-            var loadedItems = repository.LoadWorkItems();
+            item1.Id = newId1;
 
-            // ASSERT
-            Assert.IsNotNull(loadedItems);
-            Assert.AreEqual(0, loadedItems.Length);
+            // --- ACT 2 ---
+            repo1.Update(item1);
 
-            // --- Повний тест (Save/Load) ---
+            // --- ASSERT 2 (Перевіряємо "пам'ять") ---
+            Assert.AreEqual(2, repo1.GetAll().Length); // Кількість та сама
+            Assert.AreEqual("Updated Task 1", repo1.Get(newId1)?.Title); // Назва оновилась
 
-            // ARRANGE 2
-            var itemsToSave = new WorkItem[]
-            {
-                new WorkItem("Test Task 1", DateTime.Now, Priority.High),
-                new WorkItem("Test Task 2", DateTime.Now.AddDays(1), Priority.Low)
-            };
+            // --- ARRANGE 3 (Remove) ---
+            // --- ACT 3 ---
+            repo1.Remove(newId2); // Видаляємо друге завдання
 
-            // ACT 2
-            repository.SaveWorkItems(itemsToSave);
-            var reloadedItems = repository.LoadWorkItems();
+            // --- ASSERT 3 (Перевіряємо "пам'ять") ---
+            Assert.AreEqual(1, repo1.GetAll().Length); // Залишилось одне
+            Assert.IsNull(repo1.Get(newId2)); // Друге не знайдено
 
-            // ASSERT 2
-            Assert.AreEqual(2, reloadedItems.Length);
-            // CollectionAssert порівняє масиви, використовуючи наш метод .Equals() з ПР2
-            CollectionAssert.AreEqual(itemsToSave, reloadedItems);
+            // --- ARRANGE 4 (SaveChanges) ---
+            // --- ACT 4 ---
+            repo1.SaveChanges(); // Зберігаємо 1 елемент на диск
+
+            // --- ARRANGE 5 (Load) ---
+            // Створюємо НОВИЙ репозиторій. 
+            // Він має завантажити 1 елемент з workitems.json у свою "пам'ять".
+            IWorkItemRepository repo2 = new FileWorkItemsRepository();
+
+            // --- ASSERT 5 (Перевіряємо "пам'ять" repo2) ---
+            Assert.AreEqual(1, repo2.GetAll().Length);
+            Assert.AreEqual("Updated Task 1", repo2.Get(newId1)?.Title);
         }
     }
 }

@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Havrylenko.TaskPlanner.DataAccess_\Havrylenko.TaskPlanner.DataAccess_.csproj" />
     <ProjectReference Include="..\Havrylenko.TaskPlanner.Domain.Models\Havrylenko.TaskPlanner.Domain.Models..csproj" />
   </ItemGroup>
 

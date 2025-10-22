@@ -1,38 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Havrylenko.TaskPlanner.Domain.Logic_;
-using Havrylenko.TaskPlanner.Domain.Models_.Enums;
+﻿using Havrylenko.TaskPlanner.Domain.Models_;
+// Додаємо using для інтерфейсу репозиторію
+using Havrylenko.TaskPlanner.DataAccess_;
 
-namespace Havrylenko.TaskPlanner.Domain.Models_
+namespace Havrylenko.TaskPlanner.Domain.Logic_ // Перевірте ваш namespace
 {
     public class SimpleTaskPlanner : ITaskPlanner
     {
-   
-            public WorkItem[] CreatePlan(WorkItem[] items)
-            {
-                var itemsAsList = items.ToList();
-                itemsAsList.Sort(CompareWorkItems);
-                return itemsAsList.ToArray();
-            }
+        // 1. Приватне поле для зберігання репозиторію
+        private readonly IWorkItemRepository _repository;
 
-        private static int CompareWorkItems(WorkItem firstItem, WorkItem secondItem)
+        // 2. Конструктор, що приймає репозиторій (Dependency Injection)
+        public SimpleTaskPlanner(IWorkItemRepository repository)
         {
-            // 1. Порівняння за пріоритетом
-            int priorityComparison = firstItem.Priority.CompareTo(secondItem.Priority);
-            if (priorityComparison != 0)
-                return -priorityComparison; // мінус, бо більший пріоритет має бути раніше
-
-            // 2. Порівняння за датою
-            int dateComparison = firstItem.DueDate.CompareTo(secondItem.DueDate);
-            if (dateComparison != 0)
-                return dateComparison;
-
-            // 3. Порівняння за назвою
-            return string.Compare(firstItem.Title, secondItem.Title, StringComparison.OrdinalIgnoreCase);
+            _repository = repository;
         }
 
+        // 3. Метод CreatePlan тепер не має параметрів
+        public WorkItem[] CreatePlan()
+        {
+            // 4. Отримуємо дані САМОСТІЙНО з репозиторію
+            var items = _repository.GetAll();
+
+            // 5. Логіка сортування залишається незмінною
+            var itemsAsList = items.ToList();
+            itemsAsList.Sort(CompareWorkItems);
+            return itemsAsList.ToArray();
+        }
+
+        // Метод сортування незмінний
+        private static int CompareWorkItems(WorkItem firstItem, WorkItem secondItem)
+        {
+            if (firstItem.Priority.CompareTo(secondItem.Priority) != 0)
+            {
+                return secondItem.Priority.CompareTo(firstItem.Priority);
+            }
+
+            if (firstItem.DueDate.CompareTo(secondItem.DueDate) != 0)
+            {
+                return firstItem.DueDate.CompareTo(secondItem.DueDate);
+            }
+
+            return firstItem.Title.CompareTo(secondItem.Title);
+        }
     }
 }

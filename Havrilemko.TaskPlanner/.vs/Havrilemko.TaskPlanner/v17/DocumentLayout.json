@@ -3,64 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3EEB11B1-7AA9-4C43-9452-55771E82A7F1}|Havrilemko.TaskPlanner.csproj|C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E6AEE945-ECB7-47D3-99A5-C0741FE4B303}|..\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\havrylenko.taskplanner.domain.logic\\simpletaskplanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C46A6BC3-A606-43E0-9174-267011BEDB47}|..\\Havrilemko.TaskPlanner.Testing\\Havrilemko.TaskPlanner.Testing.csproj|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\havrilemko.taskplanner.testing\\workitemrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C46A6BC3-A606-43E0-9174-267011BEDB47}|..\\Havrilemko.TaskPlanner.Testing\\Havrilemko.TaskPlanner.Testing.csproj|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\havrilemko.taskplanner.testing\\simpletaskplannertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EEB11B1-7AA9-4C43-9452-55771E82A7F1}|Havrilemko.TaskPlanner.csproj|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\havrilemko.taskplanner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EEB11B1-7AA9-4C43-9452-55771E82A7F1}|Havrilemko.TaskPlanner.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\WorkItemRepositoryTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EEB11B1-7AA9-4C43-9452-55771E82A7F1}|Havrilemko.TaskPlanner.csproj|C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner\\havrilemko.taskplanner.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3EEB11B1-7AA9-4C43-9452-55771E82A7F1}|Havrilemko.TaskPlanner.csproj|solutionrelative:havrilemko.taskplanner.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EEB11B1-7AA9-4C43-9452-55771E82A7F1}|Havrilemko.TaskPlanner.csproj|C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner\\havrilemko.taskplanner.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{3EEB11B1-7AA9-4C43-9452-55771E82A7F1}|Havrilemko.TaskPlanner.csproj|solutionrelative:havrilemko.taskplanner.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.dataaccess_\\workitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.dataaccess_\\iworkitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.dataaccess_\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.domain.logic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.domain.logic\\itaskplanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrilemko.taskplanner.testing\\havrilemko.taskplanner.testing.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrilemko.taskplanner.testing\\havrilemko.taskplanner.testing.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.domain.logic\\havrylenko.taskplanner.domain.logic..csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.domain.models\\havrylenko.taskplanner.domain.models..csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.domain.logic\\havrylenko.taskplanner.domain.logic..csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.domain.models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.domain.models\\enums\\complexity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrilemko.taskplanner.testing\\simpletaskplannertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.domain.logic\\simpletaskplanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\asus\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0432\u0456\u0437\u0443\u0430\u043B\\havrylenko.taskplanner.domain.models\\workitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,232 +23,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "WorkItemRepositoryTests.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\WorkItemRepositoryTests.cs",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\WorkItemRepositoryTests.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\WorkItemRepositoryTests.cs",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\WorkItemRepositoryTests.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAowBwAAABVAAAA",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner.Testing\\WorkItemRepositoryTests.cs",
+              "RelativeDocumentMoniker": "..\\Havrilemko.TaskPlanner.Testing\\WorkItemRepositoryTests.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner.Testing\\WorkItemRepositoryTests.cs",
+              "RelativeToolTip": "..\\Havrilemko.TaskPlanner.Testing\\WorkItemRepositoryTests.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwBwAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T15:55:20.502Z",
+              "WhenOpened": "2025-10-22T19:51:06.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WorkItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\WorkItemRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\WorkItemRepository.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\WorkItemRepository.cs",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\WorkItemRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAABAAAA",
+              "DocumentIndex": 2,
+              "Title": "SimpleTaskPlannerTests.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner.Testing\\SimpleTaskPlannerTests.cs",
+              "RelativeDocumentMoniker": "..\\Havrilemko.TaskPlanner.Testing\\SimpleTaskPlannerTests.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner.Testing\\SimpleTaskPlannerTests.cs",
+              "RelativeToolTip": "..\\Havrilemko.TaskPlanner.Testing\\SimpleTaskPlannerTests.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAswDQAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T15:51:00.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IWorkItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\IWorkItemRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\IWorkItemRepository.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\IWorkItemRepository.cs",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\IWorkItemRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T15:49:58.721Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\Class1.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\Class1.cs",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.DataAccess_\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T15:42:12.253Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Program.cs",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T15:29:48.655Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ITaskPlanner.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\ITaskPlanner.cs",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\ITaskPlanner.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\ITaskPlanner.cs",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\ITaskPlanner.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T15:21:55.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Havrilemko.TaskPlanner.Testing",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\Havrilemko.TaskPlanner.Testing.csproj",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\Havrilemko.TaskPlanner.Testing.csproj",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\Havrilemko.TaskPlanner.Testing.csproj",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\Havrilemko.TaskPlanner.Testing.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-18T15:02:36.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Havrilemko.TaskPlanner.Testing",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\Havrilemko.TaskPlanner.Testing.csproj",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\Havrilemko.TaskPlanner.Testing.csproj",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\Havrilemko.TaskPlanner.Testing.csproj",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\Havrilemko.TaskPlanner.Testing.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-18T14:57:33.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Havrylenko.TaskPlanner.Domain.Logic.",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-18T14:57:26.53Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Havrylenko.TaskPlanner.Domain.Models.",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Havrylenko.TaskPlanner.Domain.Models..csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-18T14:57:16.038Z"
+              "WhenOpened": "2025-10-22T19:49:38.914Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Havrilemko.TaskPlanner",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner\\Havrilemko.TaskPlanner.csproj",
-              "RelativeDocumentMoniker": "Havrilemko.TaskPlanner.csproj",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner\\Havrilemko.TaskPlanner.csproj",
-              "RelativeToolTip": "Havrilemko.TaskPlanner.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-18T14:57:01.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Havrilemko.TaskPlanner",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner\\Havrilemko.TaskPlanner.csproj",
-              "RelativeDocumentMoniker": "Havrilemko.TaskPlanner.csproj",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner\\Havrilemko.TaskPlanner.csproj",
-              "RelativeToolTip": "Havrilemko.TaskPlanner.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-18T14:48:36.061Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Havrylenko.TaskPlanner.Domain.Logic.",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\Havrylenko.TaskPlanner.Domain.Logic..csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-18T14:48:17.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Program.cs",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T14:05:45.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Complexity.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Enums\\Complexity.cs",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Enums\\Complexity.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Enums\\Complexity.cs",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\Enums\\Complexity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T13:58:47.288Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SimpleTaskPlannerTests.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\SimpleTaskPlannerTests.cs",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\SimpleTaskPlannerTests.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\SimpleTaskPlannerTests.cs",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrilemko.TaskPlanner.Testing\\SimpleTaskPlannerTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T13:55:08.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SimpleTaskPlanner.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T22:00:49.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "WorkItem.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\WorkItem.cs",
-              "RelativeDocumentMoniker": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\WorkItem.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\WorkItem.cs",
-              "RelativeToolTip": "..\\..\\\u0412\u0456\u0437\u0443\u0430\u043B\\Havrylenko.TaskPlanner.Domain.Models\\WorkItem.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T22:00:04.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrilemko.TaskPlanner\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T09:19:52.3Z",
+              "WhenOpened": "2025-10-22T19:49:27.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SimpleTaskPlanner.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
+              "RelativeDocumentMoniker": "..\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\.net-peactice\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
+              "RelativeToolTip": "..\\Havrylenko.TaskPlanner.Domain.Logic\\SimpleTaskPlanner.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCUAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T19:46:25.83Z",
               "EditorCaption": ""
             }
           ]
